@@ -1,0 +1,275 @@
+* {
+    
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    
+     min-height: 100vh; /* will cover the 100% of viewport */
+
+     position: relative;
+}
+.navbar-light .navbar-nav .nav-link {
+
+    margin-right: 20px;
+}
+/***************** home page *************************/ 
+.img-contain {
+    position: relative;
+   
+ 
+}
+.img-contain img {
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-par {
+    position: absolute;
+    z-index: 2;
+    color:#fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+  
+}
+.overlay-par span {
+    
+      color: #f00;
+}
+
+.part2 img {
+    
+    max-width: 100%;
+    
+}
+.part2 {
+   
+    
+    padding: 20px 0;
+    
+}
+.part2 h2 {
+    
+    text-align: center;
+    color: #c56abe;
+    padding: 50px 0;
+}
+.post {
+    
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 100px 0;
+   
+    
+    
+  
+}
+
+.post-body h5,span {
+    display: inline-block;
+}
+.post-body span {
+    
+    margin: 5px;
+}
+/*****************************************************************/
+
+/*********************** footer **************/ 
+.foot {
+    position: absolute;
+     bottom: 0;
+     width: 100%;
+
+    background-color: burlywood;
+}
+.fafont {
+    display: flex;
+    justify-content: center;
+}
+.fafont i {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
+.foot h5 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+/**********************************************************/
+
+/***************login page *********************/
+.card {
+
+    margin-top: 20px;
+}
+
+/*******************Creat Post******************************/
+.formadd h5 {
+
+    text-align: center;
+    
+}
+.formadd {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+}
+.formadd label {
+    width: 100%;
+}
+.formadd input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formadd input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formadd input[type=submit]:hover {
+    background-color: #45a049;
+}
+.formadd input[type=file] {
+
+    margin: 10px 0 ;
+}
+.formadd img {
+    max-width: 100%;
+}
+.deletepost {
+    margin-top: 20px;
+}
+
+.deletepost a {
+
+  margin-top: 1px;
+}
+
+.deletepost form button{
+    
+    margin-right: 20px;
+    float: left ;
+  
+  }
+
+
+/***********************************************************/
+
+
+/***************************create user ************************/
+
+.form-user-add {
+
+    background-color: #DDD;
+    margin: 20px;
+    padding: 20px;
+}
+.form-user-add form {
+    
+    
+}
+.form-user-add label {
+
+    margin: 5px 0;
+    font-weight: 500;
+
+}
+.form-user-add input[type="text"],input[type="password"]
+ {
+  width: 100%;
+  padding :8px 20px;
+ }
+.form-user-add input[type="submit"] {
+    width: 30%;
+    margin: 10px 0; 
+    max-width: 100%;
+ }
+ /*******************************************************************/
+
+
+/************************delete posts and users *******************/
+
+.deletepost h2 {
+  display: inline;
+  margin: 40px 0;
+  padding-top: 10px;
+}
+.deletepost form {
+
+    margin-top:20px;
+}
+.deletepost span {
+
+    color: #f00;
+    font-size: 2em;
+}
+
+/**********************************************************************/
+
+/************************************/
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+
+
+
+
+
+@media screen and (max-width:500px) {
+    
+    .overlay-par h3 {
+    
+      font-size: 1em;
+    }
+    .post-body p,h5,span {
+        padding-left: 5px;
+        max-width: 100%;
+    }
+    .foot h5 {
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 1em;
+    }
+    .fafont i {
+    font-size: 1.5em;
+    padding: 10px;
+    color: #fff;
+}
+
+}
+
+

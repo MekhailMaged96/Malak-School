@@ -1,0 +1,97 @@
+.head {
+background-color:#000c;
+}
+.head span,h6,i {
+    display:inline-block;
+    color: #fff;
+}
+.head {
+
+    padding: 10px 0;
+}
+.dropdown {
+    margin: 0 5px;
+}
+.head h5 {
+    font-size: 1.6em;
+}
+.head span {
+    margin: 0 5px;
+    font-size: 1.8em;
+    color:red;
+}
+.part2 .card-header {
+ background-color: #ff0000ad;
+}
+.part2 .card .card-header  i,span {
+    font-size: 1.2em;
+    color:#FFF;
+}
+.part2 .list-group .list-group-item i {
+    margin:5px;
+    color:#000;
+}
+.part2 .list-group .list-group-item span {
+    font-size: 1em;
+    float:right;
+}
+
+.part3 {
+
+    padding:20px 0;
+}
+.part3 .card-header{
+    color: #FFF;
+    background-color: #ff0000ad;
+}
+.card-body {
+    margin: 20px 0;
+    border-radius: 2px;
+    background-color: #DDD;
+}
+
+.part3 .card-body i,span,h5 {
+    color:#000;
+    display: inline-block;
+}
+.part3 .card-body p {
+   text-align: center;
+    font-weight: 400;
+}
+.part3 .card-body i {
+    margin-right:8px;
+}
+.lastpart .card-body {
+    background-color:#fff;
+}
+.alert {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+.alert a {
+    text-decoration: none;
+        color:#000;
+}
+.alert a:hover {
+    color:#f00;
+}
+.posts {
+    margin-top: 20px;
+}
+.posts .card-header{
+    color:#fff;
+    background-color: #ff0000ad;
+}
+.posts .card-body {
+   
+    background-color: #fff;
+}
+.posts table td a {
+
+    margin-left:5px;
+}
+.margin-top {
+
+    margin-top: 20px;
+}
