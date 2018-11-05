@@ -29,14 +29,14 @@
           
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             @isstudent 
-              <a class="dropdown-item" href="#">Result</a>
-              <a class="dropdown-item" href="#">My courses</a>
+            <a class="dropdown-item" href="{{route('studentresult')}}">My courses</a>
             @endisstudent
 
             @isadmin
             <a class="dropdown-item" href="{{route('panel')}}">Panel</a>
             <a class="dropdown-item" href="{{route('users')}}">Users</a>
             <a class="dropdown-item" href="{{route('posts')}}">Posts</a>
+            <a class="dropdown-item" href="{{route('courses')}}">Courses</a>
             @endisadmin
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ route('logout') }}"
@@ -51,7 +51,7 @@
           </li>
           @endguest
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{url('contact')}}">Contact</a>
           </li>
         </ul>
       </div>

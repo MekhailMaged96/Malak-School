@@ -199,6 +199,7 @@ main {
     font-weight: 500;
 
 }
+
 .form-user-add input[type="text"],input[type="password"]
  {
   width: 100%;
@@ -231,13 +232,55 @@ main {
 
 /**********************************************************************/
 
+/************ create course ***********/ 
+
+.form-course-add {
+    margin: 20px;
+    padding: 20px;
+    background-color: #DDD;
+}
+
+.form-course-add label {
+
+    margin: 5px 0;
+    font-weight: 500;
+
+}
+.form-course-add input[type="text"]
+ {
+  width: 100%;
+  padding :8px 20px;
+ }
+.form-course-add input[type="submit"] {
+    width: 30%;
+    margin: 15px 0; 
+    
+    max-width: 100%;
+ }
+ 
+
+
+
+
 /************************************/
 
+/********courses **********/
+
+.nav-manage {
+
+    margin-bottom: 20px;
+    
+}
 
 
+/******************add result **************************/
 
+.form-add-result {
 
+    background-color: antiquewhite;
+   padding: 5%;
 
+}
 
 
 
@@ -272,4 +315,54 @@ main {
 
 }
 
+/********** student result ******************/ 
+.studentres .inform-top h3{
+    display: inline-block;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    padding: 1px;
+    color: #a2a2a2;;
+}
 
+.studentres span {
+    padding: 0 10px;
+    font-size: 25px;
+}
+.studentres .inform {
+    float: right;
+}
+
+@media screen and (max-width:320px) {
+
+	.studentres .inform-top h3{ 
+
+        font-size: 18px;
+    }
+    .studentres .inform-top span {
+        font-size: 12px;
+    }
+	.studentres .inform {
+        float: none;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+	.studentres .inform-top span{ 
+
+        font-size: 20px;
+    }
+	.studentres .inform {
+        float: none;
+    }
+}
+@media screen and (max-width:780px) {
+
+	.studentres .inform-top span{ 
+
+        font-size: 23px;
+    }
+	.studentres .inform {
+        float: none;
+    }
+}

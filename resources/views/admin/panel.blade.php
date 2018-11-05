@@ -16,15 +16,15 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-3">
                             <div class="card-body lead">
-                                <h5 class="card-title"><i class="fa fa-user" style="font-size:3em; color:#000;"></i></h5><span>{{$users->count()}}</span>
+                                <h5 class="card-title"><i class="fa fa-user" style="font-size:3em; color:#000;"></i></h5><span>{{$userscount->count()}}</span>
                                 <p class="card-text">Users</p>
                               
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">
                             <div class="card-body lead">
-                                <h5 class="card-title"><i class="fa fa-list-alt" style="font-size:3em; color:#000;"></i></h5><span>16</span>
-                                <p class="card-text">Pages</p>
+                            <h5 class="card-title"><i class="fa fa-book" style="font-size:3em; color:#000;"></i></h5><span>{{$courses->count()}}</span>
+                                <p class="card-text">Courses</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3">

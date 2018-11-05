@@ -23,6 +23,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="{{route('users.create')}}">Add User</a>
                         <a class="dropdown-item" href="{{route('posts.create')}}">Add Post</a>
+                        <a class="dropdown-item" href="{{route('courses.create')}}">Add Course</a>
                         </div>
                     </div>
                 </div>
@@ -36,6 +37,7 @@
                 <a class="{{Request::is('panel')?"active":""}}" href="{{route('panel')}}">DashBoard </a>
                 <a class="{{Request::is('/admin/posts')?"active":""}}" href="{{route('posts')}}">Posts</a>
                 <a class="{{Request::is('/admin/users')?"active":""}}" href="{{route('users')}}">Users</a>
+                <a class="{{Request::is('/admin/courses')?"active":""}}" href="{{route('courses')}}">Courses</a>
             </div>
     </div>
     <div class="container">
@@ -48,8 +50,9 @@
                                 <span>DashBoard</span>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="fa fa-user"></i>Users <span class="badge badge-secondary mr-auto">{{$users->count()}}</span></li>
+                                <li class="list-group-item"><i class="fa fa-user"></i>Users <span class="badge badge-secondary mr-auto">{{$userscount->count()}}</span></li>
                                 <li class="list-group-item"><i class="fa fa-pencil"></i>Posts<span class="badge badge-secondary mr-auto">{{$posts->count()}}</span></li>
+                                <li class="list-group-item"><i class="fa fa-book"></i>Courses<span class="badge badge-secondary mr-auto">{{$courses->count()}}</span></li>
                             </ul>
                         </div>
                     </section>

@@ -9,6 +9,7 @@
 
 <div class="col-md-9">
 <div class="container margin-top">
+    
     <div class="row">
         <div class="col-sm-12">
             <section class="posts" >
@@ -17,29 +18,24 @@
                             Users
                     </div>
                     <div class="card-body">
-                            <table class="table">
-                                <thead class="thead-light">
-                                    <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Created_at</th>
-                                    <th scope="col">Manage</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($users as $user)
-                                    <tr>
-                                        <th scope="row">{{$user->id}}</th>
-                                        <td>{{$user->name}}</td>
-                                        <td>{{$user->email}}</td>
-                                        <td>{{$user->created_at}}</td>
-                                        <td><a href="{{route('users.edit',$user->id)}}" class="btn btn-primary">Edit
-                                        <a href="{{route('users.show',$user->id)}}" class="btn btn-danger">Delete</td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
+                            <form method="get" action="{{route('users.search')}}" id="frmsearch" class="float-left" style="margin-bottom:30px;">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control  " id="search" aria-describedby="emailHelp" placeholder="Enter Name">
+                                    <div class="input-group-append" id="button-addon4">
+                                            <button type="submit" class="btn btn-primary "><i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                            <a href="{{route('users')}}" class="btn btn-secondary" style="margin-left:5px;"type="button">Back</a>
+                                    </div>
+                                </div>  
+                            </form>
+                            <div class="result">
+                                @if(empty(Request::input('search'))) 
+            
+                                      @include('users.getusers')
+                             </div>
+                                @endif
+                        </div>
+                    
                         </div>
                     </div>
                 </section>
@@ -47,4 +43,10 @@
         </div>
     </div>
  </div>
+@endsection
+
+@section('script')
+
+<script src="{{asset('js/main.js')}}"> </script>
+
 @endsection

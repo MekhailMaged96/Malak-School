@@ -28,6 +28,39 @@ class UsersController extends Controller
         return view('users.create');
     }
 
+    /****  search  ****/
+    public function search(Request $request) {
+
+        if($request->ajax()){
+
+            $users =$this->data($request['search']);
+            if(!(empty($request['search']))) 
+            {
+                $search = $request['search'];
+                $view = view('users.getusers',compact('users','search'))->render();
+                return response($view);
+
+            }
+        }
+    }
+    public function searchUser(Request $request)
+    {
+        if($request->ajax()) {
+
+            $users =$this->data($request['search']);
+            return view('users.getusers',compact('users','search'))->render();
+              
+        }
+    }
+    public function data($search) {
+        return $users = User::where('id',$search)->orWhere('email',$search)->orWhere('name',$search)->paginate(1);
+ 
+    }
+    /********************************************* */
+
+
+
+
     /**
      * Store a newly created resource in storage.
      *

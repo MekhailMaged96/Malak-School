@@ -27,4 +27,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function courses() {
+
+         return $this->belongsToMany('App\Course','user_course','user_id','course_id')->withPivot('result')->withPivot('id');
+    }
+   
 }
